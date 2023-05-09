@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@700&display=swap");
+
+.Header-wrapper {
+  width: 100%;
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr repeat(12, minmax(min-content, 6rem)) 1fr;
+}
+
+.header {
+  grid-column: 2/14;
+  grid-row: 2;
+  padding: 0 6rem;
+  margin-top: 160px;
+}
+
+.header-texts {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+  animation: texts-appear 2s forwards;
+  animation-delay: 5s;
+  opacity: 0;
+  transform: translateX(-100%);
+  margin-left: 20px;
+}
+
+.header-line {
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 3px;
+  height: 0;
+  z-index: 1;
+  animation: line-appear 2s forwards;
+  animation-delay: 5s;
+}
+
+@keyframes line-appear {
+  0% {
+    height: 0;
+    left: 50%;
+  }
+  50% {
+    height: 100%;
+    left: 0;
+  }
+  100% {
+    height: 100%;
+    left: 0;
+  }
+}
+
+@keyframes texts-appear {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.header-hero-text {
+  text-align: left;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 90px;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+}
+
+.miraculous {
+  background-image: linear-gradient(to right, #0bd9d2, #ff41d9, #0bd9d2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400% 400%;
+  transition: 0.3s ease-in-out;
+  animation: rainbow-animation 35s linear infinite;
+}
+
+@keyframes rainbow-animation {
+  to {
+    background-position: 4500vh;
+  }
+}
+
+.header-hero-btn {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0.2rem;
+  margin-top: 60px;
+  transition: all 0.3s;
+}
+
+.header-hero-btn:hover {
+  letter-spacing: 0.6rem;
+}
+
+.header-footer {
+  grid-row: 3;
+  grid-column: 1/15;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8rem;
+  margin-top: 9rem;
+margin-bottom: 8rem;
+}
+
+/* Mouse Icon starts */
+
+.icon-scroll,
+.icon-scroll:before {
+  position: absolute;
+}
+
+.icon-scroll {
+  width: 40px;
+  height: 70px;
+  margin-top: -35px;
+  box-shadow: inset 0 0 0 1px #fff;
+  border-radius: 25px;
+}
+
+.icon-scroll:before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(46px);
+  }
+}
+
+/* Mouse Icon ends */
+
+.arrow {
+  display: none;
+  animation: bounce 1s infinite 5s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.icons-div {
+  width: 15rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 23px;
+}
+
+.icon {
+  color: white;
+  opacity: 60%;
+  transition: all 0.2s ease-in;
+}
+
+.icon:hover {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 780px) {
+  .header {
+    grid-column: 1/15;
+    padding: 0 4rem;
+    margin-top: 100px;
+  }
+  .header-hero-text {
+    font-size: 60px;
+  }
+  .icon-scroll {
+    display: none;
+  }
+  .arrow {
+    display: block;
+    width: 120px;
+  }
+  .header-footer {
+    padding: 0 4rem;
+    margin-top: 120px;
+    margin-bottom: 90px;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .header {
+    padding: 0 1rem;
+  }
+  .header-hero-btn {
+    margin-top: 95px;
+  }
+  .arrow {
+    width: 100px;
+  }
+  .header-footer {
+    padding: 0 2rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .header-hero-text {
+    font-size: 49px;
+  }
+  .arrow {
+    width: 100px;
+  }
+  .header-footer {
+    padding: 0 1rem;
+  }
+}

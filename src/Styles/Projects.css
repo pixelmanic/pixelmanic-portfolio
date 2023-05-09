@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@700&display=swap");
+
+.Works {
+  display: grid;
+  grid-template-columns: 1fr repeat(12, minmax(min-content, 6rem)) 1fr;
+  min-height: 100vh;
+}
+
+.intro-text {
+  grid-column: 1/15;
+  max-width: 700px;
+  color: white;
+  opacity: 80%;
+  text-align: left;
+  padding: 0 2rem;
+  justify-self: end;
+}
+
+.projects-section {
+  grid-column: 2/14;
+}
+
+.heading-1 {
+  margin-top: 80px;
+  font-size: 40px;
+  text-align: start;
+  letter-spacing: -2px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.heading-1 span {
+    background-image: linear-gradient(90deg, #b0f3f1, #ffcfdf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} 
+
+.para {
+  color: gray;
+  margin-top: 5px;
+  margin-bottom: 200px;
+  font-size: 25px;
+  text-align: start;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.project-card {
+  border: 0.1rem solid #32364d;
+  max-width: 500px;
+  max-height: 500px;
+  border-radius: 30px;
+  overflow: hidden;
+  cursor: pointer;
+  background: rgb(22, 36, 50);
+  background: linear-gradient(
+    180deg,
+    rgba(22, 36, 50, 1) 0%,
+    rgba(0, 14, 28, 1) 100%
+  );
+  transition: transform 0.3s ease;
+  margin-left: 90px;
+}
+
+.img-div {
+  width: 100%;
+  position: relative;
+  top: -100px;
+  left: 60px;
+  transition: all 0.2s;
+}
+.image-1 {
+  width: 100%;
+  border-top-left-radius: 30px;
+}
+
+.image-text {
+  position: relative;
+  bottom: 220px;
+  font-size: 30px;
+  color: cyan;
+  text-decoration: underline;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .img-div {
+  transform: translate(-60px, -65px);
+}
+
+.project-card:hover .image-1 {
+  filter: brightness(70%);
+}
+
+.project-card:hover .image-text {
+  opacity: 1;
+}
+
+.card-h1 {
+  color: white;
+  position: relative;
+  top: 12px;
+  left: 40px;
+}
+
+.card-h3 {
+  color: #8b8b8b;
+  position: relative;
+  top: 160px;
+  left: 20px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+/* second card */
+
+.project-card-2 {
+  border: 0.1rem solid #32364d;
+  max-width: 400px;
+  max-height: 400px;
+  border-radius: 30px;
+  overflow: hidden;
+  cursor: pointer;
+  background: linear-gradient(
+    180deg,
+    rgba(22, 36, 50, 1) 0%,
+    rgba(0, 14, 28, 1) 100%
+  );
+  transition: transform 0.3s ease;
+  margin-left: 40rem;
+  position: relative;
+  top: -50px;
+}
+
+.img-div-2 {
+  width: 100%;
+  position: relative;
+  top: -100px;
+  right: 60px;
+  transition: all 0.2s;
+}
+.image-2 {
+  width: 100%;
+  border-top-right-radius: 30px;
+}
+
+.image2-text {
+  position: relative;
+  bottom: 200px;
+  font-size: 30px;
+  color: cyan;
+  text-decoration: underline;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card-2:hover .img-div-2 {
+  transform: translate(60px, -65px);
+}
+
+.project-card-2:hover .image-2 {
+  filter: brightness(70%);
+}
+
+.project-card-2:hover .image2-text {
+  opacity: 1;
+}
+
+.card2-h1 {
+  color: white;
+  position: relative;
+  top: 12px;
+  left: -40px;
+}
+
+.card2-h3 {
+  color: #8b8b8b;
+  position: relative;
+  top: 120px;
+  left: 360px;
+  writing-mode: vertical-rl;
+}
+
+/* third card */
+
+.project-card-3 {
+  border: 0.1rem solid #32364d;
+  max-width: 550px;
+  max-height: 550px;
+  border-radius: 30px;
+  overflow: hidden;
+  cursor: pointer;
+  background: rgb(22, 36, 50);
+  background: linear-gradient(
+    180deg,
+    rgba(22, 36, 50, 1) 0%,
+    rgba(0, 14, 28, 1) 100%
+  );
+  transition: transform 0.3s ease;
+  margin-left: 160px;
+}
+.img-div {
+  width: 100%;
+  position: relative;
+  top: -100px;
+  left: 60px;
+  transition: all 0.2s;
+}
+.image-1 {
+  width: 100%;
+  border-top-left-radius: 30px;
+}
+
+.image-text {
+  position: relative;
+  bottom: 220px;
+  font-size: 30px;
+  color: cyan;
+  text-decoration: underline;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card-3:hover .img-div {
+  transform: translate(-60px, -65px);
+}
+
+.project-card-3:hover .image-1 {
+  filter: brightness(70%);
+}
+
+.project-card-3:hover .image-text {
+  opacity: 1;
+}
+
+.card3-h1 {
+  color: white;
+  position: relative;
+  top: 12px;
+  left: 30px;
+}
+
+.card3-h3 {
+  color: #8b8b8b;
+  position: relative;
+  top: 200px;
+  left: 20px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
