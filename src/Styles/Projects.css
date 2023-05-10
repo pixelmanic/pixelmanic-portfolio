@@ -19,10 +19,11 @@
 
 .projects-section {
   grid-column: 2/14;
+  margin-top: 80px;
+  padding: 0 4rem;
 }
 
 .heading-1 {
-  margin-top: 80px;
   font-size: 40px;
   text-align: start;
   letter-spacing: -2px;
@@ -30,7 +31,7 @@
 }
 
 .heading-1 span {
-    background-image: linear-gradient(90deg, #b0f3f1, #ffcfdf);
+  background: linear-gradient(90deg, #61D458 0%, #7CB8D8 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 } 
@@ -38,10 +39,31 @@
 .para {
   color: gray;
   margin-top: 5px;
-  margin-bottom: 200px;
+  margin-bottom: 150px;
   font-size: 25px;
   text-align: start;
   font-family: "Bebas Neue", sans-serif;
+}
+
+.main-project-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-project-card-2 {
+  width: 100%;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+
+.main-project-card-3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card {
@@ -58,7 +80,51 @@
     rgba(0, 14, 28, 1) 100%
   );
   transition: transform 0.3s ease;
-  margin-left: 90px;
+  margin-left: 50px;
+}
+
+.main-project-card::before {
+  content: "ONE";
+  display: block;
+  position: relative;
+  top: 3rem;
+  float: right;
+  width: 150px;
+  background: linear-gradient(112deg, #BB6D84 0%, #EEF18D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 60px;
+  font-family: "Josefin Sans", sans-serif;
+  z-index: 2;
+}
+
+.main-project-card-2::before {
+  content: "TWO";
+  display: block;
+  position: relative;
+  top: 3rem;
+  width: 150px;
+  background: linear-gradient(112deg, #BB6D84 0%, #EEF18D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 60px;
+  font-family: "Josefin Sans", sans-serif;
+  z-index: 2;
+}
+
+.main-project-card-3::before {
+  content: "THREE";
+  display: block;
+  position: relative;
+  top: 3rem;
+  float: right;
+  width: 205px;
+  background: linear-gradient(112deg, #BB6D84 0%, #EEF18D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 60px;
+  font-family: "Josefin Sans", sans-serif;
+  z-index: 2;
 }
 
 .img-div {
@@ -126,9 +192,7 @@
     rgba(0, 14, 28, 1) 100%
   );
   transition: transform 0.3s ease;
-  margin-left: 40rem;
-  position: relative;
-  top: -50px;
+  margin-right: 50px;
 }
 
 .img-div-2 {
@@ -176,7 +240,8 @@
   color: #8b8b8b;
   position: relative;
   top: 120px;
-  left: 360px;
+  float: right;
+  right: 12px;
   writing-mode: vertical-rl;
 }
 
@@ -196,7 +261,7 @@
     rgba(0, 14, 28, 1) 100%
   );
   transition: transform 0.3s ease;
-  margin-left: 160px;
+  margin-left: 50px;
 }
 .img-div {
   width: 100%;
@@ -246,4 +311,150 @@
   left: 20px;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
+}
+
+@media only screen and (max-width:780px) {
+  .projects-section {
+    grid-column: 1/15;
+  }
+  .intro-text {
+    justify-self: start;
+    font-size: 13px;
+  }
+  .intro-text br {
+    display: none;
+  }
+  .heading-1 {
+    font-size: 30px;
+  }
+  .para {
+    margin-bottom: 50px;
+  }
+  .main-project-card {
+    align-items: center;
+  }
+  .main-project-card::before {
+    left: -11rem;
+  }
+  .main-project-card-2 {
+    align-items: center;
+  }
+  .main-project-card-2::before {
+    right: -11rem;
+  }
+  .main-project-card-3 {
+    align-items: center;
+  }
+  .main-project-card-3::before {
+    left: -11rem;
+  }
+  .project-card {
+    max-width: 400px;
+    max-height: 400px;
+    margin: 0px;
+  }
+  .project-card-2 {
+    margin: 0px;
+  }
+  .project-card-3 {
+    max-width: 400px;
+    max-height: 400px;
+    margin: 0px;
+  }
+
+  .card-h3 {
+    top: 125px;
+  }
+
+  .card3-h3 {
+    top: 125px;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .projects-section {
+    padding: 0 2rem;
+  }
+  .heading-1 {
+    font-size: 24px;
+  }
+  .para {
+    font-size: 19px;
+  }
+  .project-card {
+    max-width: 350px;
+    max-height: 350px;
+  }
+  .project-card-2 {
+    max-width: 350px;
+    max-height: 350px;
+  }
+  .project-card-3 {
+    max-width: 350px;
+    max-height: 350px;
+  }
+  .main-project-card::before {
+    top: 2rem;
+    left: -6rem;
+  }
+  .main-project-card-2 {
+    align-items: center;
+  }
+  .main-project-card-2::before {
+    top: 2rem;
+    right: -6rem;
+  }
+  .main-project-card-3 {
+    align-items: center;
+  }
+  .main-project-card-3::before {
+    top: 2rem;
+    left: -6rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .heading-1 {
+    font-size: 21px;
+  }
+  .para {
+    font-size: 16px;
+  }
+  .project-card {
+    max-width: 300px;
+    max-height: 300px;
+  }
+  .main-project-card::before {
+    left: -4rem;
+    top: 1rem;
+  }
+  .card-h1 {
+    font-size: 20px;
+    left: 1rem;
+  }
+  .card-h3 {
+    top: 80px;
+  }
+  .project-card-2 {
+    max-width: 300px;
+    max-height: 300px;
+  }
+  .main-project-card-2::before {
+    right: -4rem;
+    top: 1rem;
+  }
+  .card2-h3 {
+    top: 80px;
+  }
+  .project-card-3 {
+    max-width: 300px;
+    max-height: 300px;
+  }
+  .main-project-card-3::before {
+    left: -3rem;
+    top: 1rem;
+  }
+  .card3-h3 {
+    top: 80px;
+  }
 }

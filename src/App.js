@@ -6,7 +6,7 @@ import Projects from "./Components/Projects";
 function App() {
   return (
     <>
-    {/* <PreLoader /> */}
+    <PreLoader />
       <div className="App">
         <Home />
         <Projects />

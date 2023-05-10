@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <>
       <nav className="navbar">
-        <img className="navbar-brand" alt="logo" src="\logo text.png" />
+        <img className="navbar-brand" alt="logo" src="\logo name.png" />
         <button
           className={`menu-button ${isCrossed ? "crossed" : ""}`}
           onClick={handleClick}
