@@ -1,18 +1,28 @@
 .navbar {
-  grid-column: 2/14;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 3rem;
+  padding: 0.1rem 2rem;
+  position: fixed;
+  z-index: 4;
+  width: 50%;
+  justify-self: center;
+  margin-top: 40px;
+  background: rgba(42, 43, 56, 0.5);
+  backdrop-filter: blur(10.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .navbar-brand {
-  max-width: 200px;
+  max-width: 150px;
+  z-index: 4;
 }
 
 .menu-button {
-  width: 57px;
-  height: 30px;
+  width: 50px;
+  height: 27px;
   background: none;
   border: none;
   cursor: pointer;
@@ -91,20 +101,210 @@
 .main-menu {
   height: 100vh;
   position: fixed;
-  background-color: #2c394b;
+  background-color: #050810;
   z-index: 3;
-  overflow: hidden;
   transform-origin: left;
   transition: all 500ms ease-in-out;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-contents {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+.menu-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu-contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-contact span {
+  font-size: 34px;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  background: linear-gradient(112deg, #bb6d84 0%, #eef18d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu-contact a {
+  font-size: 52px;
+  text-decoration: none;
+  color: white;
+  margin-top: 60px;
+  font-family: "Bebas Neue", sans-serif;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-contact a:hover {
+  color: #64ffda;
+}
+
+.menu-sociallinks {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8rem;
+  width: 100%;
+}
+
+.menu-sociallinks span {
+  font-size: 34px;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  background: linear-gradient(112deg, #bb6d84 0%, #eef18d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-icons a {
+  font-size: 52px;
+  color: white;
+  margin-top: 60px;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: #64ffda;
+}
+
+.menu-projects {
+  display: flex;
+  align-items: center;
+}
+
+.line-div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px 8rem;
+}
+
+.line-div div {
+  background-color: white;
+  width: 2px;
+  height: 50px;
+  margin: 10px 0;
+}
+
+.line-div span {
+  writing-mode: vertical-rl; /* Set the writing mode to vertical right-to-left */
+  text-orientation: upright;
+  color: white;
+  font-size: 20px;
+  letter-spacing: -5px;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.projects-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.projects-box-card {
+  width: 18.5rem;
+  height: 13.8rem;
+  text-decoration: none;
+  position: relative;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.2rem;
+  line-height: 130%;
+  letter-spacing: -0.085em;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.projects-box-card:hover {
+  width: 19rem;
+  height: 14.2rem;
+}
+
+.projects-box-card img {
+  border-radius: 3.5rem;
+  height: 100%;
+  width: 100%;
+  -webkit-object-fit: cover;
+  object-fit: cover;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  filter: brightness(80%);
+}
+
+.projects-box-card:hover img{
+  filter: brightness(60%);
+}
+
+.projects-box-card span {
+  text-align: left;
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar {
+    width: 60%;
+  }
+
+  .projects-box-card {
+    width: 15.5rem;
+    height: 10.5rem;
+  }
+
+  .line-div {
+    margin: 0 3rem;
+  }
 }
 
 @media only screen and (max-width: 780px) {
   .navbar {
     padding: 0 2rem;
+    width: 80%;
+    margin-top: 30px;
   }
   .menu-button {
     width: 48px;
     height: 26px;
+  }
+  .menu-button span {
+    height: 2px;
+  }
+  .menu-projects {
+    display: none;
+  }
+  .menu-contact {
+    align-items: start;
+  }
+  .menu-contact span {
+    text-align: start;
+  }
+  .menu-sociallinks {
+    align-items: start;
+  }
+  .social-icons {
+    gap: 35px;
   }
 }
 

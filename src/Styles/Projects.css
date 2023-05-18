@@ -31,24 +31,25 @@
 }
 
 .heading-1 span {
-  background: linear-gradient(90deg, #61D458 0%, #7CB8D8 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-} 
+  background: linear-gradient(90deg, #61d458 0%, #7cb8d8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .para {
   color: gray;
   margin-top: 5px;
-  margin-bottom: 150px;
-  font-size: 25px;
+  margin-bottom: 70px;
+  font-size: 20px;
   text-align: start;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .main-project-card {
   width: 100%;
   display: flex;
   flex-direction: column;
+  text-decoration: none;
 }
 
 .main-project-card-2 {
@@ -58,12 +59,14 @@
   flex-direction: column;
   justify-content: end;
   align-items: end;
+  text-decoration: none;
 }
 
 .main-project-card-3 {
   width: 100%;
   display: flex;
   flex-direction: column;
+  text-decoration: none;
 }
 
 .project-card {
@@ -90,7 +93,7 @@
   top: 3rem;
   float: right;
   width: 150px;
-  background: linear-gradient(112deg, #BB6D84 0%, #EEF18D 100%);
+  background: linear-gradient(112deg, #bb6d84 0%, #eef18d 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 60px;
@@ -104,7 +107,7 @@
   position: relative;
   top: 3rem;
   width: 150px;
-  background: linear-gradient(112deg, #BB6D84 0%, #EEF18D 100%);
+  background: linear-gradient(112deg, #bb6d84 0%, #eef18d 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 60px;
@@ -119,7 +122,7 @@
   top: 3rem;
   float: right;
   width: 205px;
-  background: linear-gradient(112deg, #BB6D84 0%, #EEF18D 100%);
+  background: linear-gradient(112deg, #bb6d84 0%, #eef18d 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 60px;
@@ -142,10 +145,10 @@
 .image-text {
   position: relative;
   bottom: 220px;
-  font-size: 30px;
-  color: cyan;
-  text-decoration: underline;
+  font-size: 60px;
+  color: #64ffda;
   opacity: 0;
+  font-family: "Josefin Sans", sans-serif;
   transition: opacity 0.3s ease;
 }
 
@@ -203,16 +206,16 @@
   transition: all 0.2s;
 }
 .image-2 {
-  width: 100%;
+  width: 102%;
   border-top-right-radius: 30px;
 }
 
 .image2-text {
   position: relative;
   bottom: 200px;
-  font-size: 30px;
+  font-size: 60px;
   color: cyan;
-  text-decoration: underline;
+  font-family: "Josefin Sans", sans-serif;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -271,18 +274,8 @@
   transition: all 0.2s;
 }
 .image-1 {
-  width: 100%;
+  width: 102%;
   border-top-left-radius: 30px;
-}
-
-.image-text {
-  position: relative;
-  bottom: 220px;
-  font-size: 30px;
-  color: cyan;
-  text-decoration: underline;
-  opacity: 0;
-  transition: opacity 0.3s ease;
 }
 
 .project-card-3:hover .img-div {
@@ -313,7 +306,27 @@
   transform: rotate(180deg);
 }
 
-@media only screen and (max-width:780px) {
+/* fact text styles */
+
+.fact-text {
+  font-size: 18px;
+  color: white;
+  opacity: 80%;
+  text-align: left;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  float: right;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.fact-text span {
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 1px;
+  font-family: 16px;
+  color: #64ffda;
+}
+
+@media only screen and (max-width: 780px) {
   .projects-section {
     grid-column: 1/15;
   }
@@ -384,10 +397,12 @@
   .project-card {
     max-width: 350px;
     max-height: 350px;
+    margin-bottom: 30px;
   }
   .project-card-2 {
     max-width: 350px;
     max-height: 350px;
+    margin-bottom: 30px;
   }
   .project-card-3 {
     max-width: 350px;
@@ -414,6 +429,9 @@
 }
 
 @media only screen and (max-width: 400px) {
+  .projects-section {
+    padding: 0 1rem;
+  }
   .heading-1 {
     font-size: 21px;
   }

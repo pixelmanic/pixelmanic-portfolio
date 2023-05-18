@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import { Link } from "react-scroll";
 import {
   FacebookFilled,
   GithubFilled,
@@ -19,15 +20,23 @@ export default function Home() {
           <span className="header-line"></span>
           <div className="header-texts">
             <div className="header-hero-text">
-              <span className="miraculous">Miraculous</span>
+              <span>Where </span>
+              <span className="miraculous">Creativity</span>
               <br></br>
-              <span>Websites are</span>
+              <span>meets functionality</span>
               <br></br>
-              <span>what I build.</span>
+              <span>in Web Development.</span>
             </div>
-            <a className="header-hero-btn" href="/projects">
+            <Link
+              key="projects"
+              to="projects-section"
+              sp={true}
+              smooth={true}
+              duration={500}
+              className="header-hero-btn"
+            >
               view projects
-            </a>
+            </Link>
           </div>
         </div>
       </header>
@@ -39,7 +48,7 @@ export default function Home() {
         </div>
         <div className="icons-div">
           <a
-            href="https://www.facebook.com/codezilla7"
+            href="https://www.facebook.com/pixelmanic"
             className="icon"
             rel="noreferrer"
             target="_blank"
@@ -47,7 +56,7 @@ export default function Home() {
             <FacebookFilled />
           </a>
           <a
-            href="https://www.instagram.com/codezilla_7/"
+            href="https://www.instagram.com/pixel_manic/"
             className="icon"
             rel="noreferrer"
             target="_blank"
@@ -63,7 +72,7 @@ export default function Home() {
             <TwitterOutlined />
           </a>
           <a
-            href="https://github.com/codezilla7"
+            href="https://github.com/pixelmanic"
             className="icon"
             rel="noreferrer"
             target="_blank"

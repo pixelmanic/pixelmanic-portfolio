@@ -8,11 +8,24 @@
   grid-template-columns: 1fr repeat(12, minmax(min-content, 6rem)) 1fr;
 }
 
+.Header-wrapper::after {
+  background-image: url(C:\Users\mm342\Desktop\porfolio\public\hand-right.162bbca06ad533d8134ecde9a4473fe4.webp);
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 4rem;
+  right: 0;
+  width: 20rem;
+  height: 40rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .header {
   grid-column: 2/14;
   grid-row: 2;
   padding: 0 6rem;
-  margin-top: 160px;
+  margin-top: 18rem;
 }
 
 .header-texts {
@@ -23,7 +36,7 @@
   position: relative;
   z-index: 2;
   animation: texts-appear 2s forwards;
-  animation-delay: 5s;
+  animation-delay: 3s;
   opacity: 0;
   transform: translateX(-100%);
   margin-left: 20px;
@@ -38,7 +51,7 @@
   height: 0;
   z-index: 1;
   animation: line-appear 2s forwards;
-  animation-delay: 5s;
+  animation-delay: 3s;
 }
 
 @keyframes line-appear {
@@ -74,7 +87,7 @@
 .header-hero-text {
   text-align: left;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 90px;
+  font-size: 70px;
   font-weight: 600;
   line-height: 100%;
   color: white;
@@ -103,6 +116,7 @@
   letter-spacing: 0.2rem;
   margin-top: 60px;
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .header-hero-btn:hover {
@@ -116,8 +130,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 8rem;
-  margin-top: 9rem;
-margin-bottom: 8rem;
+  margin-top: 12rem;
+  margin-bottom: 8rem;
 }
 
 /* Mouse Icon starts */
@@ -193,16 +207,33 @@ margin-bottom: 8rem;
 
 .icon:hover {
   opacity: 1;
+  transform: translate(0px, -6px);
+}
+
+@media only screen and (max-width: 992px) {
+  .header-hero-text {
+    font-size: 56px;
+  }
+  .Header-wrapper::after {
+    bottom: 0rem;
+    width: 15rem;
+    height: 35rem;
+  }
 }
 
 @media only screen and (max-width: 780px) {
   .header {
     grid-column: 1/15;
     padding: 0 4rem;
-    margin-top: 100px;
+    margin-top: 15rem;
+  }
+  .Header-wrapper::after {
+    bottom: -3rem;
+    width: 11rem;
+    height: 31rem;
   }
   .header-hero-text {
-    font-size: 60px;
+    font-size: 42px;
   }
   .icon-scroll {
     display: none;
@@ -221,6 +252,10 @@ margin-bottom: 8rem;
 @media only screen and (max-width: 570px) {
   .header {
     padding: 0 1rem;
+    margin-top: 12rem;
+  }
+  .header-hero-text {
+    font-size: 37px;
   }
   .header-hero-btn {
     margin-top: 95px;
@@ -235,7 +270,7 @@ margin-bottom: 8rem;
 
 @media only screen and (max-width: 400px) {
   .header-hero-text {
-    font-size: 49px;
+    line-height: 40px;
   }
   .arrow {
     width: 100px;

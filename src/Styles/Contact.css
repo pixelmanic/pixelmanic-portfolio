@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+.contact-section {
+  display: grid;
+  grid-template-columns: 1fr repeat(12, minmax(min-content, 6rem)) 1fr;
+  padding: 5rem 4rem;
+}
+.contact-hero-text {
+  grid-column: 2/14;
+  text-align: left;
+  font-size: 50px;
+}
+.contact-hero-text span {
+  font-family: "Josefin Sans", sans-serif;
+  background: linear-gradient(90deg, #61d458 0%, #7cb8d8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contact-para {
+  grid-column: 2/14;
+  font-size: 35px;
+  text-align: left;
+  margin-top: 40px;
+  color: rgb(218, 218, 218);
+  font-family: "Raleway", sans-serif;
+  line-height: 40px;
+  letter-spacing: -1px;
+}
+.contact-para a {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 1000;
+  font-size: 40px;
+}
+
+@media only screen and (max-width: 570px) {
+    .contact-section {
+        padding: 5rem 2rem;
+    }
+    .contact-hero-text {
+        font-size: 40px;
+    }
+    .contact-para {
+        font-size: 24px;
+        line-height: 35px;
+    }
+    .contact-para a{
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .contact-section {
+        padding: 4rem 1rem;
+    }
+    .contact-hero-text {
+        font-size: 30px;
+    }
+    .contact-para {
+        font-size: 20px;
+        margin-top: 20px;
+        line-height: 30px;
+    }
+}
