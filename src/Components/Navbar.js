@@ -6,6 +6,10 @@ import {
   InstagramOutlined,
   TwitterOutlined,
 } from "@ant-design/icons";
+import logoName from "../Images/logo name.png"
+import mustafaNazari from "../Images/mustafaNazari.png"
+import mrLens from "../Images/mr lens.png"
+import movieMania from "../Images/movie mania.png"
 
 export default function Navbar() {
   const [isCrossed, setIsCrossed] = useState(false);
@@ -38,7 +42,7 @@ export default function Navbar() {
   return (
     <>
       <nav className="navbar">
-        <img className="navbar-brand" alt="logo" src="\logo name.png" />
+        <img className="navbar-brand" alt="logo" src={logoName} />
         <button
           className={`menu-button ${isCrossed ? "crossed" : ""}`}
           onClick={handleClick}
@@ -98,16 +102,16 @@ export default function Navbar() {
               <div></div>
             </div>
             <div className="projects-box">
-              <a className="projects-box-card">
-                <img src="mr lens.png" />
+              <a href="https://github.com/pixelmanic/mr-lens-production.git" target="_blank" rel="noreferrer" className="projects-box-card">
+                <img src={mrLens} />
                 <span>Mr Lens Production</span>
               </a>
               <a href="https://github.com/pixelmanic/full_stack_react_movie_website.git" target="_blank" rel="noreferrer" className="projects-box-card">
-                <img src="movie mania.png"/>
+                <img src={movieMania}/>
                 <span>Movie Mania</span>
               </a>
-              <a className="projects-box-card">
-                <img src="mustafaNazari.png" />
+              <a href="https://pixelmanic.com" className="projects-box-card">
+                <img src={mustafaNazari} />
                 <span>Pixel Manic</span>
               </a>
             </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import "../Styles/About.css";
+import mustafa from "../Images/Mustafa.png"
 
 export default function About() {
   return (
@@ -10,7 +11,7 @@ export default function About() {
           <div className="about-texts-wrapper">
             <p>
               Greetings! I'm Mustafa Nazari, and I take immense pleasure in
-              crafting jaw-dropping websites. My journey in web development
+              crafting beautiful websites. My journey in web development
               began in mid 2021, fueled by a newfound passion for digital
               design. As fate would have it, one day, while casually scrolling
               through{" "}
@@ -53,7 +54,7 @@ export default function About() {
         </div>
         <div className="about-image-wrapper">
           <div className="dev-wrapper">
-            <img className="developer" alt="developer" src="Mustafa.png" />
+            <img className="developer" alt="developer" src={mustafa} />
           </div>
         </div>
       </div>

@@ -8,6 +8,7 @@ import {
 } from "@ant-design/icons";
 import "../Styles/Home.css";
 import Navbar from "./Navbar";
+import arrow from "../Images/arrow.png"
 
 export default function Home() {
   return (
@@ -44,12 +45,11 @@ export default function Home() {
       <div className="header-footer">
         <div>
           <div class="icon-scroll"></div>
-          <img alt="arrow" className="arrow" src="Artboard 1.png"></img>
+          <img alt="arrow" className="arrow" src={arrow}></img>
         </div>
         <div className="icons-div">
           <a
             href="https://www.facebook.com/pixelmanic"
-            className="icon"
             rel="noreferrer"
             target="_blank"
           >
@@ -57,7 +57,6 @@ export default function Home() {
           </a>
           <a
             href="https://www.instagram.com/pixel_manic/"
-            className="icon"
             rel="noreferrer"
             target="_blank"
           >
@@ -65,7 +64,6 @@ export default function Home() {
           </a>
           <a
             href="https://twitter.com/Mustafa_nazari7"
-            className="icon"
             rel="noreferrer"
             target="_blank"
           >
@@ -73,7 +71,6 @@ export default function Home() {
           </a>
           <a
             href="https://github.com/pixelmanic"
-            className="icon"
             rel="noreferrer"
             target="_blank"
           >

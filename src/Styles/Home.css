@@ -9,7 +9,7 @@
 }
 
 .Header-wrapper::after {
-  background-image: url(C:\Users\mm342\Desktop\porfolio\public\hand-right.162bbca06ad533d8134ecde9a4473fe4.webp);
+  background-image: url("../Images/hand-right.webp");
   content: "";
   display: block;
   position: absolute;
@@ -19,6 +19,7 @@
   height: 40rem;
   background-repeat: no-repeat;
   background-size: contain;
+  z-index: -1;
 }
 
 .header {
@@ -199,13 +200,13 @@
   font-size: 23px;
 }
 
-.icon {
+.icons-div a{
   color: white;
   opacity: 60%;
   transition: all 0.2s ease-in;
 }
 
-.icon:hover {
+.icons-div a:hover {
   opacity: 1;
   transform: translate(0px, -6px);
 }
