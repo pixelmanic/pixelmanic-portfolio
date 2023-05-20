@@ -49,7 +49,6 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  text-decoration: none;
 }
 
 .main-project-card-2 {
@@ -59,20 +58,19 @@
   flex-direction: column;
   justify-content: end;
   align-items: end;
-  text-decoration: none;
 }
 
 .main-project-card-3 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  text-decoration: none;
 }
 
 .project-card {
   border: 0.1rem solid #32364d;
   max-width: 500px;
   max-height: 500px;
+  text-decoration: none;
   border-radius: 30px;
   overflow: hidden;
   cursor: pointer;
@@ -186,6 +184,7 @@
   border: 0.1rem solid #32364d;
   max-width: 400px;
   max-height: 400px;
+  text-decoration: none;
   border-radius: 30px;
   overflow: hidden;
   cursor: pointer;
@@ -255,6 +254,7 @@
   max-width: 550px;
   max-height: 550px;
   border-radius: 30px;
+  text-decoration: none;
   overflow: hidden;
   cursor: pointer;
   background: rgb(22, 36, 50);

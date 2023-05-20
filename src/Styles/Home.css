@@ -8,6 +8,19 @@
   grid-template-columns: 1fr repeat(12, minmax(min-content, 6rem)) 1fr;
 }
 
+.Header-wrapper::before {
+  background-image: url("../Images/hand-left.webp");
+  content: "";
+  width: 10rem;
+  height: 20rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 4rem;
+}
+
 .Header-wrapper::after {
   background-image: url("../Images/hand-right.webp");
   content: "";
@@ -200,7 +213,7 @@
   font-size: 23px;
 }
 
-.icons-div a{
+.icons-div a {
   color: white;
   opacity: 60%;
   transition: all 0.2s ease-in;
@@ -228,6 +241,11 @@
     padding: 0 4rem;
     margin-top: 15rem;
   }
+  .Header-wrapper::before {
+    width: 7rem;
+    height: 14rem;
+    top: 7rem;
+  }
   .Header-wrapper::after {
     bottom: -3rem;
     width: 11rem;
@@ -254,6 +272,11 @@
   .header {
     padding: 0 1rem;
     margin-top: 12rem;
+  }
+  .Header-wrapper::before {
+    width: 6rem;
+    height: 12rem;
+    top: 5rem;
   }
   .header-hero-text {
     font-size: 37px;

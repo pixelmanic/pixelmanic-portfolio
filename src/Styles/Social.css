@@ -46,6 +46,10 @@
     transition: all 0.2s ease;
 }
 
+.social-links a:last-child {
+    text-align: start;
+  }  
+
 .social-links a:hover{
     color: #64ffda;
     transform: translate(0px, -4px);
@@ -70,6 +74,10 @@
     }
     .social-links a {
         font-size: 21px;
+        text-align: start;
+    }
+    .social-links a:nth-child(2) {
+        margin-left: 14px;
     }
 }
 
