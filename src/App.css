@@ -2,27 +2,32 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+progress {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  border: none;
+  background: transparent;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+progress::-webkit-progress-bar {
+  background: transparent;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+progress::-moz-progress-bar {
+    background: linear-gradient(90deg, #0BD9D2 0%, #FF41D9 100%);
 }
+
+progress::-webkit-progress-value {
+  background: linear-gradient(90deg, #0BD9D2 0%, #FF41D9 100%);
+}
+
+
 
 .App-link {
   color: #61dafb;

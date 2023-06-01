@@ -44,11 +44,11 @@ export default function Projects() {
           </a>
         </div>
         <div className="main-project-card-3">
-          <a href="https://www.pixelmanic.com" target="_blank" rel="noreferrer"  className="project-card-3">
+          <a href="https://github.com/pixelmanic/pixelmanic-portfolio.git" target="_blank" rel="noreferrer"  className="project-card-3">
             <h1 className="card3-h1">Pixel Manic</h1>
             <h3 className="card3-h3">React Website</h3>
             <div className="img-div">
-              <img className="image-1" alt="mr lens" src={mustafaNazari}></img>
+              <img className="image-1" alt="pixelmanic" src={mustafaNazari}></img>
               <span className="image-text">Visit</span>
             </div>
           </a>

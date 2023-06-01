@@ -107,7 +107,7 @@
   color: white;
 }
 
-.miraculous {
+.creativity {
   background-image: linear-gradient(to right, #0bd9d2, #ff41d9, #0bd9d2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -188,11 +188,6 @@
 
 /* Mouse Icon ends */
 
-.arrow {
-  display: none;
-  animation: bounce 1s infinite 5s;
-}
-
 @keyframes bounce {
   0% {
     transform: translateY(0);
@@ -247,7 +242,7 @@
     top: 7rem;
   }
   .Header-wrapper::after {
-    bottom: -3rem;
+    bottom: -7rem;
     width: 11rem;
     height: 31rem;
   }
@@ -256,10 +251,6 @@
   }
   .icon-scroll {
     display: none;
-  }
-  .arrow {
-    display: block;
-    width: 120px;
   }
   .header-footer {
     padding: 0 4rem;
@@ -284,9 +275,6 @@
   .header-hero-btn {
     margin-top: 95px;
   }
-  .arrow {
-    width: 100px;
-  }
   .header-footer {
     padding: 0 2rem;
   }
@@ -295,9 +283,6 @@
 @media only screen and (max-width: 400px) {
   .header-hero-text {
     line-height: 40px;
-  }
-  .arrow {
-    width: 100px;
   }
   .header-footer {
     padding: 0 1rem;

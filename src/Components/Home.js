@@ -22,7 +22,7 @@ export default function Home() {
           <div className="header-texts">
             <div className="header-hero-text">
               <span>Where </span>
-              <span className="miraculous">Creativity</span>
+              <span className="creativity">Creativity</span>
               <br></br>
               <span>meets functionality</span>
               <br></br>
@@ -45,7 +45,6 @@ export default function Home() {
       <div className="header-footer">
         <div>
           <div class="icon-scroll"></div>
-          <img alt="arrow" className="arrow" src={arrow}></img>
         </div>
         <div className="icons-div">
           <a
