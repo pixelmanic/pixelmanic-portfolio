@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../Styles/About.css";
 import mustafa from "../Images/Mustafa.png"
+import { aboutAnim } from "../Animations";
 
 export default function About() {
+  useEffect(()=>{
+    aboutAnim()
+  },[])
   return (
     <section id="about">
       <h1 className="about-hero-text"><span>My Journey</span><small>🚀</small></h1>

@@ -17,7 +17,13 @@
 
 .navbar-brand {
   max-width: 150px;
+  min-height: 50px;
   z-index: 4;
+  cursor: pointer;
+}
+
+.logo {
+  width: 100%;
 }
 
 .menu-button {
@@ -104,10 +110,9 @@
   background-color: #050810;
   z-index: 10;
   transform-origin: left;
-  transition: all 500ms ease-in-out;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 0%;
   overflow: hidden;
   overflow-y: scroll;
   display: flex;
@@ -125,6 +130,7 @@
   display: flex;
   justify-content: space-evenly;
   width: 80%;
+  opacity: 0;
 }
 
 .menu-links {

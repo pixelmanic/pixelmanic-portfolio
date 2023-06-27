@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../Styles/Contact.css";
+import { contactAnim } from "../Animations";
 
 export default function Contact() {
+  useEffect(()=>{
+    contactAnim()
+  },[])
   return (
     <section className="contact-section">
       <h1 className="contact-hero-text">

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-scroll";
 import {
   FacebookFilled,
@@ -8,11 +8,16 @@ import {
 } from "@ant-design/icons";
 import "../Styles/Home.css";
 import Navbar from "./Navbar";
-import arrow from "../Images/arrow.png"
+import { homeContentAnim } from "../Animations";
 
 export default function Home() {
+
+  useEffect(()=>{
+    homeContentAnim();
+  },[])
+
   return (
-    <div className="Header-wrapper">
+    <div id="home-page" className="Header-wrapper">
       {/* Navbar */}
       <Navbar />
       {/* Contents Div */}

@@ -5,6 +5,7 @@
   display: grid;
   grid-template-columns: 1fr repeat(12, minmax(min-content, 6rem)) 1fr;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 .intro-text {
@@ -68,8 +69,8 @@
 
 .project-card {
   border: 0.1rem solid #32364d;
-  max-width: 500px;
-  max-height: 500px;
+  width: 500px;
+  height: 500px;
   text-decoration: none;
   border-radius: 30px;
   overflow: hidden;
@@ -129,12 +130,14 @@
 }
 
 .img-div {
-  width: 100%;
+  width: 500px;
+  height: 500px;
   position: relative;
   top: -100px;
   left: 60px;
   transition: all 0.2s;
 }
+
 .image-1 {
   width: 100%;
   border-top-left-radius: 30px;
@@ -182,8 +185,8 @@
 
 .project-card-2 {
   border: 0.1rem solid #32364d;
-  max-width: 400px;
-  max-height: 400px;
+  width: 400px;
+  height: 400px;
   text-decoration: none;
   border-radius: 30px;
   overflow: hidden;
@@ -198,7 +201,8 @@
 }
 
 .img-div-2 {
-  width: 100%;
+  width: 400px;
+  height: 400px;
   position: relative;
   top: -100px;
   right: 60px;
@@ -251,8 +255,8 @@
 
 .project-card-3 {
   border: 0.1rem solid #32364d;
-  max-width: 550px;
-  max-height: 550px;
+  width: 550px;
+  height: 550px;
   border-radius: 30px;
   text-decoration: none;
   overflow: hidden;
@@ -266,8 +270,9 @@
   transition: transform 0.3s ease;
   margin-left: 50px;
 }
-.img-div {
-  width: 100%;
+.img-div-3 {
+  width: 550px;
+  height: 550px;
   position: relative;
   top: -100px;
   left: 60px;
@@ -278,7 +283,7 @@
   border-top-left-radius: 30px;
 }
 
-.project-card-3:hover .img-div {
+.project-card-3:hover .img-div-3 {
   transform: translate(-60px, -65px);
 }
 
@@ -362,17 +367,25 @@
     left: -11rem;
   }
   .project-card {
-    max-width: 400px;
-    max-height: 400px;
+    width: 400px;
+    height: 400px;
     margin: 0px;
+  }
+  .img-div {
+    width: 400px;
+    height: 400px;
   }
   .project-card-2 {
     margin: 0px;
   }
   .project-card-3 {
-    max-width: 400px;
-    max-height: 400px;
+    width: 400px;
+    height: 400px;
     margin: 0px;
+  }
+  .img-div-3 {
+    width: 400px;
+    height: 400px;
   }
 
   .card-h3 {
@@ -395,18 +408,30 @@
     font-size: 19px;
   }
   .project-card {
-    max-width: 350px;
-    max-height: 350px;
+    width: 350px;
+    height: 350px;
     margin-bottom: 30px;
+  }
+  .img-div {
+    width: 350px;
+    height: 350px;
   }
   .project-card-2 {
-    max-width: 350px;
-    max-height: 350px;
+    width: 350px;
+    height: 350px;
     margin-bottom: 30px;
   }
+  .img-div-2 {
+    width: 350px;
+    height: 350px;
+  }
   .project-card-3 {
-    max-width: 350px;
-    max-height: 350px;
+    width: 350px;
+    height: 350px;
+  }
+  .img-div-3 {
+    width: 350px;
+    height: 350px;
   }
   .main-project-card::before {
     top: 2rem;
@@ -439,8 +464,12 @@
     font-size: 16px;
   }
   .project-card {
-    max-width: 300px;
-    max-height: 300px;
+    width: 300px;
+    height: 300px;
+  }
+  .img-div {
+    width: 300px;
+    height: 300px;
   }
   .main-project-card::before {
     left: -4rem;
@@ -454,8 +483,12 @@
     top: 80px;
   }
   .project-card-2 {
-    max-width: 300px;
-    max-height: 300px;
+    width: 300px;
+    height: 300px;
+  }
+  .img-div-2 {
+    width: 300px;
+    height: 300px;
   }
   .main-project-card-2::before {
     right: -4rem;
@@ -465,8 +498,12 @@
     top: 80px;
   }
   .project-card-3 {
-    max-width: 300px;
-    max-height: 300px;
+    width: 300px;
+    height: 300px;
+  }
+  .img-div-3 {
+    width: 300px;
+    height: 300px;
   }
   .main-project-card-3::before {
     left: -3rem;

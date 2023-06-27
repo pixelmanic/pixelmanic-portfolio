@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {
     FacebookFilled,
     GithubFilled,
@@ -6,8 +6,12 @@ import {
     TwitterOutlined,
   } from "@ant-design/icons";
 import "../Styles/Social.css"
+import { socialAnim } from '../Animations';
 
 export default function Social() {
+  useEffect(()=>{
+    socialAnim()
+  },[])
   return (
     <section className='social-section'>
         <h1 className='social-hero-text'><span>Stay in touch!</span><small>👋</small></h1>
