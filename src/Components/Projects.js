@@ -23,7 +23,7 @@ export default function Projects() {
           and bring ideas to life.✨
         </p>
         <h1 className="heading-1">
-          <span>Working hard is just part of who I am</span>
+          <span>Yeah, I work hard</span>
           <small>💪</small>
         </h1>
         <p className="para">take a look at my Featured projects</p>
