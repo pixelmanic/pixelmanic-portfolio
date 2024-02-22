@@ -6,6 +6,7 @@ import mark from "../Images/mark.png"
 export default function Footer() {
   return (
     <footer className="footer">
+      <hr className="footer-line"></hr>
       <div className="footer-div">
         <a href="https://pixelmanic.com" className="footer-one-div">
           <img src={mark} alt="Pixel Manic" />

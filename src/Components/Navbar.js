@@ -2,15 +2,14 @@ import React, { useState } from "react";
 import "../Styles/Navbar.css";
 import { Link } from "react-scroll";
 import {
-  FacebookFilled,
   GithubFilled,
   InstagramOutlined,
   TwitterOutlined,
 } from "@ant-design/icons";
 import logoName from "../Images/logo name.png";
-import mustafaNazari from "../Images/mustafaNazari.png";
-import mrLens from "../Images/mr lens.png";
-import movieMania from "../Images/movie mania.png";
+import velvet from "../Images/velvetMain.jpg";
+import pact from "../Images/pact.jpg";
+import craig from "../Images/craigmain.png";
 import { menuCloseAnim, menuOpenAnim } from "../Animations";
 
 export default function Navbar() {
@@ -65,20 +64,6 @@ export default function Navbar() {
                   <InstagramOutlined />
                 </a>
                 <a
-                  href="https://github.com/pixelmanic"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  <GithubFilled />
-                </a>
-                <a
-                  href="https://www.facebook.com/pixelmanic"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  <FacebookFilled />
-                </a>
-                <a
                   href="https://twitter.com/Mustafa_nazari7"
                   style={{ textAlign: "start" }}
                   rel="noreferrer"
@@ -86,37 +71,51 @@ export default function Navbar() {
                 >
                   <TwitterOutlined />
                 </a>
+                <a
+                  href="https://github.com/pixelmanic"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <GithubFilled />
+                </a>
               </div>
             </div>
           </div>
           <div className="menu-projects">
             <div className="line-div">
               <div></div>
-              <span>Recent Projects</span>
+              <span>Featured Projects</span>
               <div></div>
             </div>
             <div className="projects-box">
               <a
-                href="https://github.com/pixelmanic/mr-lens-production.git"
+                href="https://wearpact.com/"
                 target="_blank"
                 rel="noreferrer"
                 className="projects-box-card"
               >
-                <img src={mrLens} />
-                <span>Mr Lens Production</span>
+                <img src={pact} alt="pact clothing" />
+                <span>
+                  Pact Cloting <br></br> Store
+                </span>
               </a>
               <a
-                href="https://github.com/pixelmanic/full_stack_react_movie_website.git"
+                href="https://craig.black/"
                 target="_blank"
                 rel="noreferrer"
                 className="projects-box-card"
               >
-                <img src={movieMania} />
-                <span>Movie Mania</span>
+                <img src={craig} alt="Craig Black" />
+                <span>Craig Black</span>
               </a>
-              <a href="https://pixelmanic.com" className="projects-box-card">
-                <img src={mustafaNazari} />
-                <span>Pixel Manic</span>
+              <a
+                href="https://www.velvetspectrum.com/"
+                target="_blank"
+                rel="noreferrer"
+                className="projects-box-card"
+              >
+                <img src={velvet} alt="velvet Spectrum" />
+                <span>Velvet Spectrum</span>
               </a>
             </div>
           </div>

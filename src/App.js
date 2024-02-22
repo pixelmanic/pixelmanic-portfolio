@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <PreLoader />
-      <div className="App">
+      <div className="App" data-scroll-container>
         <progress max="100" value="0"></progress>
         <Home />
         <Projects />

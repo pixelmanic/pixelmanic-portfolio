@@ -10,10 +10,10 @@ const tl = gsap.timeline();
 
 export const preLoaderAnim = () => {
   tl.to(".texts-container", {
-      duration: 0,
-      opacity: 1,
-      ease: "Power3.easeOut",
-    })
+    duration: 0,
+    opacity: 1,
+    ease: "Power3.easeOut",
+  })
     .from(".texts-container span", {
       duration: 1.5,
       delay: 1,
@@ -50,31 +50,38 @@ export const scrollProgressAnim = () => {
 };
 
 export const homeContentAnim = () => {
-  tl.to("body", {
-    css: { overflowY: "scroll" },
-  });
   tl.fromTo(
     ".header-line",
     { x: 500, y: -160, opacity: 0 },
-    { x: 0, y: 0, opacity: 1, duration: 1, ease: "power1.out" }
+    { x: 0, y: 0, opacity: 1, duration: .7, ease: "power1.out" }
   ).fromTo(
     ".header-texts",
     { opacity: 0, xPercent: -100 },
-    { opacity: 1, xPercent: 0, duration: 1, ease: "power1.out" }
+    { opacity: 1, xPercent: 0, duration: 0.5, ease: "power1.out" }
   );
+  gsap.to(".header-content-box", {
+    opacity:0,
+    scrollTrigger: {
+      trigger: ".header-content-box",
+      start: "top 20%",
+      scrub: true
+    },
+  });
 };
 
 const menuOpenTl = gsap.timeline();
 export const menuOpenAnim = () => {
-  menuOpenTl.play();
   menuOpenTl
-    .to(".main-menu", { width: "100%", duration: 1, ease: "power1.out" })
-    .to(".menu-contents", { opacity: 1, duration: 1, ease: "ease" })
+    .to(".main-menu", { width: "100%", duration: .7, ease: "power1.out" })
+    .to(".menu-contents", { opacity: 1, duration: .7, ease: "ease" })
     .to("body", { css: { overflowY: "hidden" } });
 };
 
-export const menuCloseAnim = () => {
-  menuOpenTl.reverse(); // Reverse the menuOpenTl timeline
+export const menuCloseAnim = () => {  
+  menuOpenTl
+  .to(".menu-contents", { opacity: 0, duration: .7, ease: "ease" })
+  .to(".main-menu", { width: "0%", duration: .7, ease: "power1.out" })
+  .to("body", { css: { overflowY: "scroll" } });
 };
 
 export const projectsAnim = () => {
@@ -98,7 +105,6 @@ export const projectsAnim = () => {
     {
       y: 0,
       opacity: 1,
-      delay: 0.8,
       duration: 0.6,
       scrollTrigger: {
         trigger: ".para",
@@ -109,11 +115,11 @@ export const projectsAnim = () => {
   gsap.fromTo(
     ".heading-1",
     {
-      x: -200,
+      y: -50,
       opacity: 0,
     },
     {
-      x: 0,
+      y: 0,
       opacity: 1,
       duration: 1,
       scrollTrigger: {
@@ -123,43 +129,9 @@ export const projectsAnim = () => {
     }
   );
   gsap.fromTo(
-    ".main-project-card",
+    "#card1",
     {
-      x: 300,
-      opacity: 0,
-      ease: "power1.out",
-    },
-    {
-      x: 0,
-      opacity: 1,
-      duration: 1,
-      scrollTrigger: {
-        trigger: ".main-project-card",
-        start: "top 65%",
-      },
-    }
-  );
-  gsap.fromTo(
-    ".main-project-card-2",
-    {
-      x: -300,
-      opacity: 0,
-      ease: "power1.out",
-    },
-    {
-      x: 0,
-      opacity: 1,
-      duration: 1,
-      scrollTrigger: {
-        trigger: ".main-project-card-2",
-        start: "top 65%",
-      },
-    }
-  );
-  gsap.fromTo(
-    ".main-project-card-3",
-    {
-      y: 300,
+      y: -50,
       opacity: 0,
       ease: "power1.out",
     },
@@ -168,17 +140,43 @@ export const projectsAnim = () => {
       opacity: 1,
       duration: 1,
       scrollTrigger: {
-        trigger: ".main-project-card-3",
+        trigger: "#card1",
+        start: "top 65%",
       },
     }
   );
   gsap.fromTo(
-    ".fact-text",
-    { opacity: 0 },
+    "#card2",
     {
+      y: -50,
+      opacity: 0,
+      ease: "power1.out",
+    },
+    {
+      y: 0,
       opacity: 1,
       duration: 1,
-      scrollTrigger: { trigger: ".fact-text" },
+      scrollTrigger: {
+        trigger: "#card2",
+        start: "top 65%",
+      },
+    }
+  );
+  gsap.fromTo(
+    "#card3",
+    {
+      y: -50,
+      opacity: 0,
+      ease: "power1.out",
+    },
+    {
+      y: 0,
+      opacity: 1,
+      duration: 1,
+      scrollTrigger: {
+        trigger: "#card3",
+        start: "top 65%"
+      },
     }
   );
 };
@@ -191,10 +189,10 @@ export const aboutAnim = () => {
       start: "top 65%",
       end: "top 65%",
       onEnter: () => {
-        gsap.to("#about", { backgroundColor: "#0a192f", duration: 0.8 });
+        gsap.to("#about", { backgroundColor: "#050810", duration: 0.8 });
       },
       onLeaveBack: () => {
-        gsap.to("#about", { backgroundColor: "#000e1c", duration: 0.5 });
+        gsap.to("#about", { backgroundColor: "#000000", duration: 0.5 });
       },
     },
   });
@@ -263,16 +261,6 @@ export const socialAnim = () => {
       opacity: 1,
       delay: 0.5,
       scrollTrigger: { trigger: ".social-hero-text", start: "top 70%" },
-    }
-  );
-  gsap.fromTo(
-    ".social-links",
-    { y: -60, opacity: 0 },
-    {
-      y: 0,
-      opacity: 1,
-      delay:0.8,
-      scrollTrigger: { trigger: ".social-links", start: "top 70%" },
     }
   );
 };

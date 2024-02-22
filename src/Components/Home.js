@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-scroll";
 import {
-  FacebookFilled,
   GithubFilled,
   InstagramOutlined,
   TwitterOutlined,
@@ -53,13 +52,6 @@ export default function Home() {
         </div>
         <div className="icons-div">
           <a
-            href="https://www.facebook.com/pixelmanic"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <FacebookFilled />
-          </a>
-          <a
             href="https://www.instagram.com/pixel_manic/"
             rel="noreferrer"
             target="_blank"
@@ -67,7 +59,7 @@ export default function Home() {
             <InstagramOutlined />
           </a>
           <a
-            href="https://twitter.com/Mustafa_nazari7"
+            href="https://twitter.com/pixelmanicdev"
             rel="noreferrer"
             target="_blank"
           >

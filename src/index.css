@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #000e1c;
+  background-color: #000000;
 }
 
 * {
@@ -17,4 +17,19 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@font-face {
+  font-family: body-font;
+  src: url(./Styles/Fonts/MarkPro-Heavy.f9372e73.woff);
+}
+
+@font-face {
+  font-family: second-font;
+  src: url(./Styles//Fonts/CircularStd-Book.205e19c8.woff);
+}
+
+@font-face {
+  font-family: third-font;
+  src: url(./Styles/Fonts/D-DINCondensed-Bold.965ab944.woff);
 }

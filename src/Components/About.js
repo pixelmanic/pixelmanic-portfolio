@@ -13,7 +13,7 @@ export default function About() {
       <div className="about-content-box">
         <div className="main-about-wrapper">
           <div className="about-texts-wrapper">
-            <p>
+            <p className="main-para">
               Greetings! I'm Mustafa Nazari, and I take immense pleasure in
               crafting beautiful websites. My journey in web development
               began in mid 2021, fueled by a newfound passion for digital
@@ -26,7 +26,7 @@ export default function About() {
               upon the wonders of web development. And just like that, I was
               hooked!
             </p>
-            <p>
+            <p className="main-para">
               I’m also available on freelancing websites like{" "}
               <a
                 href="https://www.fiverr.com/codezilla7"
@@ -52,8 +52,8 @@ export default function About() {
             <li>React.js</li>
             <li>Node.js</li>
             <li>MongoDB</li>
+            <li>GSAP(Animation)</li>
             <li>Adobe Photoshop</li>
-            <li>Adobe Illustrator</li>
           </ul>
         </div>
         <div className="about-image-wrapper">

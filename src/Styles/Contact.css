@@ -11,8 +11,8 @@
   font-size: 50px;
 }
 .contact-hero-text span {
-  font-family: "Josefin Sans", sans-serif;
-  background: linear-gradient(90deg, #61d458 0%, #7cb8d8 100%);
+  font-family: body-font;
+  background: linear-gradient(90deg, #B2F2F0 0%, #FECFDF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -22,15 +22,20 @@
   text-align: left;
   margin-top: 40px;
   color: rgb(193, 193, 193);
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   line-height: 45px;
-  letter-spacing: -1px;
-  font-weight: 600;
+  font-weight: 500;
+  font-family: second-font;
 }
 .contact-para a {
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 1000;
-  font-size: 40px;
+  font-family: body-font;
+  text-decoration: none;
+  color: white;
+  text-transform: lowercase;
+  transition: .3s;
+}
+
+.contact-para a:hover {
+  color: aqua;
 }
 
 @media only screen and (max-width: 570px) {

@@ -9,7 +9,7 @@ export default function Contact() {
   return (
     <section className="contact-section">
       <h1 className="contact-hero-text">
-        <span>Onbaord?</span>
+        <span>Sold Yet?</span>
         <small>👍</small>
       </h1>
       <p className="contact-para">
