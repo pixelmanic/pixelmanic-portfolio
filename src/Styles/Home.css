@@ -75,8 +75,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 400% 400%;
-  transition: 0.3s ease-in-out; 
-   animation: rainbow-animation 35s linear infinite;
+  transition: 0.3s ease-in-out;
+  animation: rainbow-animation 35s linear infinite;
 }
 
 @keyframes rainbow-animation {
@@ -122,7 +122,7 @@
   width: 40px;
   height: 70px;
   margin-top: -35px;
-  box-shadow: inset 0 0 0 1px #8000FF;
+  box-shadow: inset 0 0 0 1px #8000ff;
   border-radius: 25px;
 }
 
@@ -130,7 +130,7 @@
   content: "";
   width: 8px;
   height: 8px;
-  background: #8000FF;
+  background: #8000ff;
   margin-left: -4px;
   top: 8px;
   border-radius: 4px;
@@ -182,9 +182,20 @@
   transform: translate(0px, -6px);
 }
 
+@media only screen and (max-width: 1142px) {
+  .header {
+    margin-top: 17rem;
+  }
+
+  .header-hero-text {
+    font-size: 62px;
+  }
+
+}
+
 @media only screen and (max-width: 992px) {
   .header-hero-text {
-    font-size: 56px;
+    font-size: 42px;
   }
   .Header-wrapper::after {
     bottom: 0rem;
@@ -209,16 +220,16 @@
     width: 11rem;
     height: 31rem;
   }
-  .header-hero-text {
-    font-size: 42px;
-  }
   .icon-scroll {
     display: none;
   }
   .header-footer {
     padding: 0 4rem;
-    margin-top: 120px;
+    margin-top: 9rem;
     margin-bottom: 90px;
+  }
+  .header-hero-btn {
+    margin-top: 35px;
   }
 }
 
@@ -236,7 +247,7 @@
     font-size: 37px;
   }
   .header-hero-btn {
-    margin-top: 95px;
+    margin-top: 50px;
   }
   .header-footer {
     padding: 0 2rem;

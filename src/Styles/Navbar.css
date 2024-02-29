@@ -241,11 +241,6 @@
   cursor: pointer;
 }
 
-.projects-box-card:hover {
-  width: 19rem;
-  height: 14.2rem;
-}
-
 .projects-box-card img {
   border-radius: 3.5rem;
   height: 100%;
@@ -257,7 +252,7 @@
   filter: brightness(60%);
 }
 
-.projects-box-card:hover img{
+.projects-box-card:hover img {
   filter: brightness(60%);
 }
 
@@ -267,6 +262,26 @@
   position: absolute;
   top: 40%;
   left: 10%;
+}
+
+@media only screen and (min-width: 1142px) {
+  .projects-box-card:hover {
+    width: 19rem;
+    height: 14.2rem;
+  }
+}
+
+@media only screen and (max-width: 1142px) {
+  .projects-box-card {
+    width: 16.5rem;
+    height: 10.8rem;
+  }
+  .line-div {
+    margin: 0 5rem;
+  }
+  .projects-box {
+     gap: 5px;
+  }
 }
 
 @media only screen and (max-width: 992px) {

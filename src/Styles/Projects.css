@@ -106,10 +106,6 @@
   z-index: 1;
 }
 
-.card-middle:hover .active {
-  opacity: 0;
-}
-
 .card-right {
   color: white;
   margin-left: 4rem;
@@ -131,13 +127,19 @@
   text-decoration: none;
 }
 
+@media only screen and (min-width: 1142px) {
+  .card-middle:hover .active {
+    opacity: 0;
+  }
+}
+
 @media only screen and (max-width: 1142px) {
   .card-left {
     display: none;
   }
 
   .pro-card {
-    width: 70%;
+    width: 60%;
     flex-direction: column;
     padding: 3rem;
   }
