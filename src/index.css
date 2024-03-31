@@ -21,15 +21,15 @@ code {
 
 @font-face {
   font-family: body-font;
-  src: url(./Styles/Fonts/MarkPro-Heavy.f9372e73.woff);
+  src: url(./Styles/Fonts/MarkPro-Heavy.f9372e73.woff2);
 }
 
 @font-face {
   font-family: second-font;
-  src: url(./Styles//Fonts/CircularStd-Book.205e19c8.woff);
+  src: url(./Styles//Fonts/CircularStd-Book.205e19c8.woff2);
 }
 
 @font-face {
   font-family: third-font;
-  src: url(./Styles/Fonts/D-DINCondensed-Bold.965ab944.woff);
+  src: url(./Styles/Fonts/D-DINCondensed-Bold.965ab944.woff2);
 }
